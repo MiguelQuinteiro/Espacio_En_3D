@@ -432,11 +432,11 @@ Private Sub Graficar()
       For y = -orbitas To orbitas
         For z = -orbitas To orbitas
           If z Mod 2 = 0 Then
-            d = Sqr((x * 150 * 1.9) ^ 2 + (y * 150) ^ 2 + (z * 150) ^ 2)
+            d = Sqr((x * 150 * 1.6) ^ 2 + (y * 150) ^ 2 + (z * 150) ^ 2)
             If d > 3000 And d < 3150 Then
 
-              Call PP3D(x * 255, y * 255, ((z + 1) * 255) / 1.1, 15, QBColor(Int(Abs(z + 1) Mod 15)))  'vbWhite
-              'Call PP3D(x * 300, y * 300, ((z + 1) * 300) / 1.1, 20, vbGreen) 'vbWhite
+              'Call PP3D(x * 255, y * 255, ((z + 1) * 255) / 1.1, 15, QBColor(Int(Abs(z + 1) Mod 15)))  'vbWhite
+              Call PP3D(x * 150, y * 150, ((z + 1) * 150) / 1.1, 5, vbGreen) 'vbWhite
 
             End If
           End If
